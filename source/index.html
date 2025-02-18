@@ -13,7 +13,13 @@
 <body class="page__body">
   <header class="header">
 
-    <a class="header__logo" href="#">логотип</a>
+    <a class="header__logo" tabindex="0" href="#">
+      <picture>
+        <source media="(min-width:1440px)" srcset="images/logo-desktop.svg" type="image/svg+xml" width="170" height="36">
+        <source media="(min-width:768px)" srcset="images/logo-tablet.svg" type="image/svg+xml" width="82" height="36">
+        <img src="images/logo-mobile.svg" width="32" height="36" type="image/svg+xml" alt="Логотип Drink2Go.">
+      </picture>
+    </a>
 
     <h1 class="header__slogan">Интернет-магазин кофейных напитков</h1>
 
