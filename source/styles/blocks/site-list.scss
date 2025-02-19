@@ -1,0 +1,38 @@
+.site-list {
+  display: none;
+
+  @media (min-width: $tablet) {
+    margin: 0;
+    padding: 0;
+    max-width: 440px;
+    display: flex;
+    flex-wrap: wrap;
+
+    &__item {
+      font-size: 12px;
+      line-height: 16px;
+      min-width: 106px;
+    }
+
+    &__link {
+      display: block;
+      padding: 32px 22px;
+      color: $base-black;
+      text-transform: uppercase;
+    }
+
+    &__link--active {
+      color: $base-primary;
+      border-bottom: 2px solid $base-primary;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    margin-right: 60px;
+    max-width: 500px;
+
+    &__item {
+      min-width: 125px;
+    }
+  }
+}
