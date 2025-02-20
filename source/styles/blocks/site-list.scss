@@ -4,24 +4,26 @@
   @media (min-width: $tablet) {
     margin: 0;
     padding: 0;
-    max-width: 440px;
+    max-width: 400px;
     display: flex;
     flex-wrap: wrap;
 
     &__item {
+      display: block;
+      text-align: center;
+      padding: 32px 22px;
       font-size: 12px;
       line-height: 16px;
-      min-width: 106px;
     }
 
     &__link {
       display: block;
-      padding: 32px 22px;
       color: $base-black;
       text-transform: uppercase;
+      min-width: 89px;
     }
 
-    &__link--active {
+    &__item--active {
       color: $base-primary;
       border-bottom: 2px solid $base-primary;
     }
@@ -29,10 +31,10 @@
 
   @media (min-width: $desktop) {
     margin-right: 60px;
-    max-width: 500px;
+    max-width: 535px;
 
     &__item {
-      min-width: 125px;
+      max-width: 130px;
     }
   }
 }

@@ -4,16 +4,16 @@
   display: flex;
   flex-wrap: wrap;
 
+  @media (min-width: $tablet) {
+    margin-left: 60px;
+  }
+
   @media (min-width: $desktop) {
     min-width: 260px;
 
     &__item {
       min-width: 130px;
     }
-  }
-
-  @media (min-width: $tablet) {
-    margin-left: 35px;
   }
 
   @media (min-width: $desktop) {
@@ -43,6 +43,7 @@
       line-height: 16px;
       text-transform: uppercase;
       margin-left: 8px;
+      color: $base-black;
     }
   }
 
