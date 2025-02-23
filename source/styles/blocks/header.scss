@@ -1,31 +1,3 @@
 .header {
-  min-width: 280px;
-  padding: 0 0 0 20px;
-  display: flex;
-  align-items: center;
-  justify-content: space-between;
-
-  @media (min-width: $tablet) {
-    padding-right: 20px;
-  }
-
-  @media (min-width: $desktop) {
-    padding: 0 40px;
-  }
-
-  &__slogan {
-    display: none;
-
-    @media (min-width: $desktop) {
-      display: flex;
-      align-items: center;
-      font-family: $montserrat-regular;
-      margin: 0;
-      max-width: 126px;
-      font-size: 12px;
-      line-height: 16px;
-      margin-left: 20px;
-      margin-right: auto;
-    }
-  }
+  padding: 0 20px;
 }
