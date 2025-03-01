@@ -1,24 +1,5 @@
 .user-list {
   margin: 0;
-  display: flex;
-  justify-content: flex-end;
-  align-items: center;
-  flex-wrap: wrap;
-  max-width: 240px;
-
-  &__toggle {
-    border: none;
-    background-color: $base-white;
-    padding: 22px;
-  }
-
-  &__item {
-    padding: 22px 0;
-  }
-
-  &__link {
-    padding: 0 22px;
-  }
 
   &__link-text {
     display: none;
