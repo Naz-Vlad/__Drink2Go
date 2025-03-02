@@ -1,5 +1,14 @@
 .user-list {
+  position: absolute;
+  top: 0;
+  right: 60;
+  display: flex;
   margin: 0;
+
+  &__link {
+    display: block;
+    padding: 22px;
+  }
 
   &__link-text {
     display: none;
