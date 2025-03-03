@@ -5,6 +5,11 @@
   display: flex;
   margin: 0;
 
+  @media (min-width: $tablet) {
+    position: static;
+    margin-left: 60px;
+  }
+
   &__link {
     display: block;
     padding: 22px;

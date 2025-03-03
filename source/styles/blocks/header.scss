@@ -6,6 +6,14 @@
   padding: 12px 0 12 20px;
   box-sizing: border-box;
 
+  @media (min-width: $tablet) {
+    width: 768px;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 20px;
+  }
+
   &__slogan {
     display: none;
   }

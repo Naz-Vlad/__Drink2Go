@@ -11,12 +11,20 @@
     display: flex;
     flex-direction: column-reverse;
     align-items: center;
+
+    @media (min-width: $tablet) {
+      flex-direction: row;
+    }
   }
 
   &__toggle {
     position: absolute;
     top: 0;
     right: 0;
+
+    @media (min-width: $tablet) {
+      display: none;
+    }
   }
   // состояние кнопки при закрытом меню(показываем решотку)
   &--closed .main-nav__toggle {
