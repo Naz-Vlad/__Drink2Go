@@ -1,6 +1,12 @@
 .main-nav {
   margin: 0;
 
+  &--closed .site-list {
+    @media (max-width: $mobile-only) {
+      display: none;
+    }
+  }
+
   &__wrapper {
     display: flex;
     flex-direction: column-reverse;
@@ -12,7 +18,7 @@
     top: 0;
     right: 0;
   }
-
+  // состояние кнопки при закрытом меню(показываем решотку)
   &--closed .main-nav__toggle {
     background-image: url("../../icons/stack.svg#buger");
     background-repeat: no-repeat;
@@ -27,7 +33,7 @@
       background-color: $base-secondary;
     }
   }
-
+  // состояние кнопки при открытом меню(показываем крестик)
   &--opened .main-nav__toggle {
     background-image: url("../../icons/stack.svg#cross");
     background-repeat: no-repeat;
@@ -39,6 +45,11 @@
     cursor: pointer;
   }
 }
-
-
-
+// при нерабочем JS отключаем изображение кнопки
+.main-nav--nojs .main-nav__toggle {
+  display: none;
+}
+// при нерабочем JS открываем(показываем) меню
+.main-nav--nojs .site-list {
+  display: block;
+}
