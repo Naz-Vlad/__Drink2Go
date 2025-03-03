@@ -14,11 +14,26 @@
   }
 
   &--closed .main-nav__toggle {
-    mask-image: url("../../icons/stack.svg#buger");
-    background-color: #000000;
-    mask-repeat: no-repeat;
-    mask-position: center;
-    mask-size: 16px 16px;
+    background-image: url("../../icons/stack.svg#buger");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $base-white;
+    background-size: 16px 16px;
+    padding: 30px;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+      background-color: $base-secondary;
+    }
+  }
+
+  &--opened .main-nav__toggle {
+    background-image: url("../../icons/stack.svg#cross");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $base-white;
+    background-size: 16px 16px;
     padding: 30px;
     border: none;
     cursor: pointer;
