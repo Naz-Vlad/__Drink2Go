@@ -5,8 +5,19 @@
   margin-left: -20px;
 
   @media (min-width: $tablet) {
+    display: flex;
     width: 420px;
     margin: 0;
+  }
+
+  &__item--active {
+    @media (min-width: $tablet) {
+      border-bottom: 2px solid $base-primary;
+    }
+
+    & a {
+      color: $base-primary;
+    }
   }
 
   &__link {
@@ -21,12 +32,8 @@
 
     @media (min-width: $tablet) {
       margin: 0;
-      padding: 32px 20px;
+      padding: 32px 21px;
       border-top: none;
     }
-  }
-
-  @media (min-width: $tablet) {
-    display: flex;
   }
 }
