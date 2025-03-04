@@ -5,6 +5,10 @@
     width: 600px;
   }
 
+  @media (min-width: $desktop) {
+    width: 990px;
+  }
+
   &--closed .site-list {
     @media (max-width: $mobile-only) {
       display: none;
