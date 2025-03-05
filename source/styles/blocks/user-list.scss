@@ -41,9 +41,33 @@
     @media (min-width: $desktop) {
       display: block;
       font-family: $montserrat-medium;
+      color: $base-black;
       font-size: 12px;
       line-height: 16px;
       text-transform: uppercase;
+    }
+
+    &:hover,
+    &:focus {
+      color: $base-primary;
+    }
+  }
+
+  @media (min-width: $mobile) {
+    &__item:active {
+      background-color: $base-secondary;
+    }
+  }
+
+  @media (min-width: $tablet) {
+    &__item:active {
+      background-color: $base-white;
+    }
+  }
+
+  @media (min-width: $desktop) {
+    &__item:active {
+      background-color: $base-secondary;
     }
   }
 }

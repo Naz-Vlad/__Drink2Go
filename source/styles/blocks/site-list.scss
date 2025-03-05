@@ -12,8 +12,11 @@
   }
 
   @media (min-width: $desktop) {
-    //justify-content: flex-end;
     width: 550px;
+  }
+
+  &__item--active:active {
+    background-color: $base-secondary;
   }
 
   &__item--active {
