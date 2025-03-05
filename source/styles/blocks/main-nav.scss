@@ -1,14 +1,6 @@
 .main-nav {
   margin: 0;
 
-  @media (min-width: $tablet) {
-    width: 600px;
-  }
-
-  @media (min-width: $desktop) {
-    width: 900px;
-  }
-
   &--closed .site-list {
     @media (max-width: $mobile-only) {
       display: none;

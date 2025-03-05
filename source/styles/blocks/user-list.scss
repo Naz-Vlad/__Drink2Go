@@ -4,7 +4,7 @@
   right: 60;
   margin: 0;
   padding: 0;
-  width: 120px;
+  min-width: 120px;
   display: flex;
   flex-wrap: wrap;
 
@@ -15,7 +15,7 @@
 
   @media (min-width: $desktop) {
     justify-content: flex-end;
-    width: 300px;
+    min-width: 300px;
     gap: 19px;
   }
 

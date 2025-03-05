@@ -1,13 +1,13 @@
 .header {
   position: relative;
-  width: 320px;
+  min-width: 320px;
   display: flex;
   flex-direction: column;
   padding: 12px 0 12 20px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
-    width: 768px;
+    min-width: 768px;
     flex-direction: row;
     justify-content: space-between;
     align-items: center;
@@ -15,7 +15,7 @@
   }
 
   @media (min-width: $desktop) {
-    width: 1440px;
+    min-width: 1440px;
     padding: 0 40px;
   }
 
@@ -31,7 +31,7 @@
     display: none;
 
     @media (min-width: $desktop) {
-      width: 130px;
+      max-width: 130px;
       display: flex;
       color: $base-black;
     }
