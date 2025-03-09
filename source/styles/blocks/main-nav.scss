@@ -1,6 +1,5 @@
 .main-nav {
-  margin: 0;
-
+  // если класс .main-nav--closed меню закрыто
   &--closed .site-list {
     @media (max-width: $mobile-only) {
       display: none;
@@ -22,6 +21,14 @@
     position: absolute;
     top: 0;
     right: 0;
+    padding: 30px;
+    background-color: $base-white;
+    border: none;
+    cursor: pointer;
+
+    &:active {
+      background-color: $base-secondary;
+    }
 
     @media (min-width: $tablet) {
       display: none;
@@ -32,26 +39,14 @@
     background-image: url("../../icons/stack.svg#buger");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $base-white;
     background-size: 16px 16px;
-    padding: 30px;
-    border: none;
-    cursor: pointer;
-
-    &:active {
-      background-color: $base-secondary;
-    }
   }
   // состояние кнопки при открытом меню(показываем крестик)
   &--opened .main-nav__toggle {
     background-image: url("../../icons/stack.svg#cross");
     background-repeat: no-repeat;
     background-position: center;
-    background-color: $base-white;
     background-size: 16px 16px;
-    padding: 30px;
-    border: none;
-    cursor: pointer;
   }
 }
 // при нерабочем JS отключаем изображение кнопки
