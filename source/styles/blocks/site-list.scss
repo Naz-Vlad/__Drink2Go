@@ -46,11 +46,9 @@
       padding: 32px 21px;
       border-top: none;
     }
-  }
 
-  &__item {
     @media (min-width: $desktop) {
-      width: 121px;
+      padding: 32px 30px;
     }
   }
 }
