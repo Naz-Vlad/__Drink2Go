@@ -3,7 +3,7 @@
   min-width: 320px;
   display: flex;
   flex-direction: column;
-  padding: 12px 0 12px 20px;
+  padding-top: 12px;
   box-sizing: border-box;
 
   @media (min-width: $tablet) {
@@ -20,6 +20,9 @@
   }
 
   &__logo {
+    margin-left: 20px;
+    margin-bottom: 8px;
+
     @media (min-width: $desktop) {
       display: flex;
       align-items: center;
