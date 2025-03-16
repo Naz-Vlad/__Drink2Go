@@ -100,8 +100,40 @@
   }
 
   &__arrow {
+    position: relative;
     width: 20px;
     height: 656px;
     border: none;
+  }
+
+  &__arrow--left::before {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    mask-image: url("../../icons/stack.svg#arrow-left");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $base-primary;
+  }
+
+  &__arrow--right::after {
+    position: absolute;
+    content: "";
+    display: block;
+    width: 20px;
+    height: 20px;
+    left: 0;
+    mask-image: url("../../icons/stack.svg#arrow-right");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-color: $base-primary;
+  }
+
+  &__arrow--right:hover::after,
+  &__arrow--left:hover::before {
+    background-color: $base-white;
   }
 }
