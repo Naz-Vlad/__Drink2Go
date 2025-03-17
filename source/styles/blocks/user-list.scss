@@ -24,6 +24,10 @@
     padding: 22px;
     margin: 0;
 
+    &:hover {
+      fill: $base-primary;
+    }
+
     @media (min-width: $desktop) {
       padding: 0;
     }
@@ -73,8 +77,4 @@
       background-color: $base-secondary;
     }
   }
-}
-
-.user-list__link-icon:hover svg use {
-  color: red;
 }
