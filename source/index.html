@@ -76,9 +76,9 @@
     <h1 class="visually-hidden">Интернет-магазин кофейных напитков</h1>
     <section class="hero">
       <h2 class="visually-hidden">Слайдер с новинками</h2>
-      <div class="hero__slider slider">
+      <div class="slider swiper">
         <!-- список слайдов -->
-        <ul class="slider__list">
+        <ul class="slider__list swiper-wrapper">
           <li class="slider__item">
             <!-- обертка для стилизации слайда(карточки товара) -->
             <picture>
@@ -164,6 +164,8 @@
           <button class="slider__arrow slider__arrow--right swiper-button-next" type="button">
             <span class="visually-hidden">стрелка в право</span>
           </button>
+        </div>
+        <div class="slider__bullets swiper-pagination"><span class="visually-hidden">кнопки переключения фото</span>
         </div>
       </div>
     </section>
