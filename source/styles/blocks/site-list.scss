@@ -22,7 +22,7 @@
 
   &__item--active:active {
     background-color: $base-secondary;
-    color: #000;
+    color: $base-black;
   }
 
   &__item--active a {
