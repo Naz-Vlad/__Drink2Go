@@ -19,17 +19,16 @@
     gap: 19px;
   }
 
-  &__link-icon {
+  &__link {
     display: block;
     padding: 22px;
     margin: 0;
 
-    @media (min-width: $desktop) {
-      padding: 0;
+    &:hover {
+      fill: $base-primary;
     }
-  }
 
-  &__link {
+
     @media (min-width: $desktop) {
       display: flex;
       gap: 8px;
