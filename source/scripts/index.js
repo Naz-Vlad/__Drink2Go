@@ -1,4 +1,6 @@
 /* в этот файл добавляет скрипты*/
+
+// мобильное меню
 const navMain = document.querySelector('.main-nav');
 const navToggle = document.querySelector('.main-nav__toggle');
 
@@ -12,4 +14,13 @@ navToggle.addEventListener('click', () => {
     navMain.classList.add('main-nav--closed');
     navMain.classList.remove('main-nav--opened');
   }
+});
+
+// слайдер
+new Swiper('.image-slider',{ /* настройки слайдера */
+  /* настройки стрелок */
+  navigation: {
+    nextEl: '.swiper-button-next', /* следующий элемент */
+    prevEl: '.swiper-button-prev' /* предыдущий элемент */
+  },
 });
