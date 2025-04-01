@@ -17,7 +17,7 @@ navToggle.addEventListener('click', () => {
 });
 
 // слайдер
-new Swiper('.image-slider',{ /* настройки слайдера */
+new Swiper('.slider',{ /* настройки слайдера */
   /* настройки стрелок */
   navigation: {
     nextEl: '.swiper-button-next', /* следующий элемент */

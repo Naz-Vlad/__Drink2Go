@@ -73,44 +73,41 @@
     </nav>
 
   </header>
-
   <main class="main">
-    <h1>ТЕЛО</h1>
+    <section class="hero">
+      <h2 class="visually-hidden">Слайдер с новинками</h2>
+      <!-- слайдер -->
+      <div class="slider swiper-container">
+        <!-- центровщик слайдера -->
+        <ul class="slider__wrapper swiper-wrapper">
+          <!-- слайд(блок карточки товара) -->
+          <li class="slider__slide swiper-slide">
+            <!-- карточка товара -->
+            <div class="slider__image">
+              <img src="images/slider/flat-mobile@1x.png" alt="Фото кофе." width="280" height="280">
+            </div>
+          </li>
+          <li class="slider__slide swiper-slide">
+            <!-- карточка товара -->
+            <div class="slider__image">
+              <img src="images/slider/latte-desktop@1x.png" alt="Фото кофе." width="280" height="280">
+            </div>
+          </li>
+          <li class="slider__slide swiper-slide">
+            <!-- карточка товара -->
+            <div class="slider__image">
+              <img src="images/slider/espresso-tablet@1x.png" alt="Фото кофе." width="280" height="280">
+            </div>
+          </li>
+        </ul>
+        <!-- стрелки управления слайдером -->
+        <div class="swiper-button-prev"></div>
+        <div class="swiper-button-next"></div>
+        <!-- погинация слайдера(буллиты) -->
+        <div class="swiper-pagination slider-pagination-bullet "></div>
+      </div>
+    </section>
   </main>
-  <section class="hero">
-    <h2 class="visually-hidden">Слайдер с новинками</h2>
-    <!-- слайдер -->
-    <div class="image-slider swiper-container">
-      <!-- центровщик слайдера -->
-      <ul class="image-slider__wrapper swiper-wrapper">
-        <!-- слайд(блок карточки товара) -->
-        <li class="image-slider__slide swiper-slide">
-          <!-- карточка товара -->
-          <div class="image-slider__image">
-            <img src="images/slider/flat-mobile@1x.png" alt="Фото кофе." width="280" height="280">
-          </div>
-        </li>
-        <li class="image-slider__slide swiper-slide">
-          <!-- карточка товара -->
-          <div class="image-slider__image">
-            <img src="images/slider/latte-desktop@1x.png" alt="Фото кофе." width="280" height="280">
-          </div>
-        </li>
-        <li class="image-slider__slide swiper-slide">
-          <!-- карточка товара -->
-          <div class="image-slider__image">
-            <img src="images/slider/espresso-tablet@1x.png" alt="Фото кофе." width="280" height="280">
-          </div>
-        </li>
-      </ul>
-      <!-- стрелки управления слайдером -->
-      <div class="swiper-button-prev"></div>
-      <div class="swiper-button-next"></div>
-      <!-- погинация слайдера(буллиты) -->
-      <div class="swiper-pagination slider-pagination-bullet "></div>
-    </div>
-  </section>
-
   <footer class="footer">
     <p>ПОДВАЛ</p>
   </footer>
