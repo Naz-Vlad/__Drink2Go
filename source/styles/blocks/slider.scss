@@ -1,0 +1,88 @@
+
+.slider {
+  width: 100%;
+  // список новинок
+  &__list {
+    padding: 0;
+  }
+  // навинка
+  &__item {
+    padding: 20px 20px 0;
+    min-width: 320px;
+    text-align: center;
+
+    &--flat {
+      background-color: $background-flat;
+    }
+
+    &--latte {
+      background-color: $background-latte;
+    }
+
+    &--espresso {
+      background-color: $background-espresso;
+    }
+  }
+  // блок с харастеристиками новинки
+  &__card-wrapper {
+    padding-bottom: 60px;
+    padding-top: 6px;
+  }
+
+  &__badge {
+    display: block;
+    font-weight: 700;
+    text-transform: uppercase;
+    color: $base-primary;
+    margin-bottom: 4px;
+    letter-spacing: 0.06em; // растягивает текст
+  }
+
+  &__title {
+    font-family: $montserrat-bold;
+    max-width: 280px;
+    font-size: 36px;
+    line-height: 48px;
+    margin: 0;
+    margin-bottom: 10px;
+    letter-spacing: 0.02em; // растягивает текст
+  }
+
+  &__text {
+    font-size: 14px;
+    line-height: 20px;
+    margin: 0;
+    margin-bottom: 20px;
+  }
+  // блок с ценами и кнопкой
+  &__buy {
+    display: flex;
+    padding: 0 25px;
+    justify-content: center;
+    align-items: center;
+    gap: 23px;
+  }
+  // блок с ценами
+  &__price-wrapper {
+    display: flex;
+    gap: 8px;
+  }
+
+  &__old-price {
+    font-size: 16px;
+    line-height: 32px;
+    color: $base-primary;
+    text-decoration: line-through;
+  }
+
+  &__price {
+    font-family: $montserrat-semi-bold;
+    font-size: 20px;
+    line-height: 32px;
+    letter-spacing: 0.04em;
+  }
+
+  &__button {
+    @include button;
+  }
+}
