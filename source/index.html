@@ -77,26 +77,75 @@
     <section class="hero">
       <h2 class="visually-hidden">Слайдер с новинками</h2>
       <!-- слайдер -->
-      <div class="slider swiper-container">
+      <div class="slider swiper">
         <!-- центровщик слайдера -->
         <ul class="slider__list swiper-wrapper">
           <!-- слайд(блок карточки товара) -->
-          <li class="slider__item swiper-slide">
+          <li class="slider__item slider__item--flat swiper-slide">
             <!-- карточка товара -->
             <div class="slider__item-inner">
-              <img src="images/slider/flat-mobile@1x.png" alt="Фото кофе." width="280" height="280">
+              <picture>
+                <img src="images/slider/flat-mobile@1x.png" alt="Фото кофе." width="280" height="280">
+              </picture>
+              <div class="slider__card-wrapper">
+                <span class="slider__badge">Новинка!</span>
+                <h2 class="slider__title">Декаф Флэт Уайт</h2>
+                <p class="slider__text">
+                  Свежесваренный кофе без кофеина из Эфиопии с&nbsp;натуральным фермерским молоком — то, что нужно для
+                  расслабления после тяжёлого рабочего дня
+                </p>
+                <div class="slider__buy">
+                  <div class="slider__price-wrapper">
+                    <span class="slider__old-price">295₽</span>
+                    <span class="slider__price">225₽</span>
+                  </div>
+                  <a class="slider__button" href="#catalog">Заказать</a>
+                </div>
+              </div>
             </div>
           </li>
-          <li class="slider__item swiper-slide">
+          <li class="slider__item slider__item--latte swiper-slide">
             <!-- карточка товара -->
             <div class="slider__item-inner">
-              <img src="images/slider/latte-desktop@1x.png" alt="Фото кофе." width="280" height="280">
+              <picture>
+                <img src="images/slider/latte-desktop@1x.png" alt="Фото кофе." width="280" height="280">
+              </picture>
+              <div class="slider__card-wrapper">
+                <span class="slider__badge">Новинка!</span>
+                <h2 class="slider__title">Лавандовый Латте</h2>
+                <p class="slider__text">
+                  Невероятное сочетание перуанской высокогорной арабики с молоком ламы и лавандовым сиропом унесёт вас прямо на вершину Радужных гор
+                </p>
+                <div class="slider__buy">
+                  <div class="slider__price-wrapper">
+                    <span class="slider__old-price">285₽</span>
+                    <span class="slider__price">265₽</span>
+                  </div>
+                  <a class="slider__button" href="#catalog">Заказать</a>
+                </div>
+              </div>
             </div>
           </li>
-          <li class="slider__item swiper-slide">
+          <li class="slider__item slider__item--espresso swiper-slide">
             <!-- карточка товара -->
             <div class="slider__item-inner">
-              <img src="images/slider/espresso-tablet@1x.png" alt="Фото кофе." width="280" height="280">
+              <picture>
+                <img src="images/slider/espresso-tablet@1x.png" alt="Фото кофе." width="280" height="280">
+              </picture>
+              <div class="slider__card-wrapper">
+                <span class="slider__badge">Новинка!</span>
+                <h2 class="slider__title">Тройной Эспрессо</h2>
+                <p class="slider__text">
+                  Мощнее укола адреналина, чернее самой тёмной ночи, этот тройной эспрессо из Колумбии покажет вам, что такое настоящая бодрость
+                </p>
+                <div class="slider__buy">
+                  <div class="slider__price-wrapper">
+                    <span class="slider__old-price">395₽</span>
+                    <span class="slider__price">375₽</span>
+                  </div>
+                  <a class="slider__button" href="#catalog">Заказать</a>
+                </div>
+              </div>
             </div>
           </li>
         </ul>
