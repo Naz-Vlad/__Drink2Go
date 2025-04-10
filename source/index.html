@@ -84,7 +84,9 @@
             <!-- карточка товара -->
             <div class="slider__item-inner">
               <picture>
-                <img src="images/slider/flat-mobile@1x.png" alt="Фото кофе." width="280" height="280">
+                <source media="(min-width: 1440px)" width="600" height="600" srcset="images/slider/flat-desktop@1x.png 1x, images/slider/flat-desktop@2x.png 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="476" height="476" srcset="images/slider/flat-tablet@1x.png 1x, images/slider/flat-tablet@2x.png 2x" type="image/webp">
+                <img src="images/slider/flat-mobile@1x.png" srcset="images/slider/flat-mobile@2x.png 2x" alt="Фото кофе." width="280" height="280">
               </picture>
               <div class="slider__card-wrapper">
                 <span class="slider__badge">Новинка!</span>
@@ -103,11 +105,14 @@
               </div>
             </div>
           </li>
-          <li class="slider__item slider__item--latte swiper-slide">
+          <li class="slider__item slider__item--latte swiper-slide" style="display: none">
             <!-- карточка товара -->
             <div class="slider__item-inner">
               <picture>
-                <img src="images/slider/latte-desktop@1x.png" alt="Фото кофе." width="280" height="280">
+                <source media="(min-width: 1440px)" width="600" height="600" srcset="images/slider/latte-desktop@1x.png 1x, images/slider/latte-desktop@2x.png 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="476" height="476" srcset="images/slider/latte-tablet@1x.png 1x,
+                  images/slider/latte-tablet@2x.png 2x" type="image/webp">
+                <img src="images/slider/latte-mobile@1x.png" srcset="images/slider/latte-mobile@2x.png 2x" alt="Фото кофе." width="280" height="280">
               </picture>
               <div class="slider__card-wrapper">
                 <span class="slider__badge">Новинка!</span>
@@ -125,11 +130,15 @@
               </div>
             </div>
           </li>
-          <li class="slider__item slider__item--espresso swiper-slide">
+          <li class="slider__item slider__item--espresso swiper-slide" style="display: none">
             <!-- карточка товара -->
             <div class="slider__item-inner">
               <picture>
-                <img src="images/slider/espresso-tablet@1x.png" alt="Фото кофе." width="280" height="280">
+                <source media="(min-width: 1440px)" width="600" height="600" srcset="images/slider/espresso-desktop@1x.png 1x,
+                images/slider/espresso-desktop@2x.png 2x" type="image/webp">
+                <source media="(min-width: 768px)" width="476" height="476" srcset="images/slider/espresso-tablet@1x.png 1x,
+                  images/slider/espresso-tablet@2x.png 2x" type="image/webp">
+                <img src="images/slider/espresso-mobile@1x.png" srcset="images/slider/espresso-mobile@2x.png 2x" alt="Фото кофе." width="280" height="280">
               </picture>
               <div class="slider__card-wrapper">
                 <span class="slider__badge">Новинка!</span>
