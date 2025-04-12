@@ -10,23 +10,46 @@
     padding: 20px 20px 0;
     min-width: 320px;
     text-align: center;
+  }
 
-    &--flat {
-      background-color: $background-flat;
+  &__item--flat {
+    background-color: $background-flat;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(180deg, $background-flat 77%, transparent 50%);
     }
+  }
 
-    &--latte {
-      background-color: $background-latte;
+  &__item--latte {
+    background-color: $background-latte;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(180deg, $background-latte 77%, transparent 50%);
     }
+  }
 
-    &--espresso {
-      background-color: $background-espresso;
+  &__item--espresso {
+    background-color: $background-espresso;
+
+    @media (min-width: $tablet) {
+      background: linear-gradient(180deg, $background-espresso 77%, transparent 50%);
+    }
+  }
+
+
+  &__item-inner {
+    @media (min-width: $tablet) {
+      display: flex;
+      flex-direction: column-reverse;
     }
   }
   // блок с харастеристиками новинки
   &__card-wrapper {
     padding-bottom: 60px;
-    padding-top: 6px;
+
+    @media (min-width: $tablet) {
+      padding-bottom: 20px;
+    }
   }
 
   &__badge {
@@ -34,8 +57,13 @@
     font-weight: 700;
     text-transform: uppercase;
     color: $base-primary;
+    margin-top: 6px;
     margin-bottom: 4px;
     letter-spacing: 0.06em; // растягивает текст
+
+    @media (min-width: $tablet) {
+      margin-top: 39px;
+    }
   }
 
   &__title {
@@ -43,9 +71,15 @@
     max-width: 280px;
     font-size: 36px;
     line-height: 48px;
-    margin: 0;
-    margin-bottom: 10px;
+    margin: 0 auto 10px;
     letter-spacing: 0.02em; // растягивает текст
+
+    @media (min-width: $tablet) {
+      max-width: 610px;
+      font-size: 56px;
+      line-height: 80px;
+      margin-bottom: 16px;
+    }
   }
 
   &__text {
@@ -53,6 +87,13 @@
     line-height: 20px;
     margin: 0;
     margin-bottom: 20px;
+
+    @media (min-width: $tablet) {
+      max-width: 600px;
+      font-size: 20px;
+      line-height: 32px;
+      margin: 0 auto 20px;
+    }
   }
   // блок с ценами и кнопкой
   &__buy {
@@ -86,3 +127,4 @@
     @include button;
   }
 }
+
