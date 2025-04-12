@@ -18,6 +18,10 @@
     @media (min-width: $tablet) {
       background: linear-gradient(180deg, $background-flat 77%, transparent 50%);
     }
+
+    @media (min-width: $desktop) {
+      background-color: $background-flat;
+    }
   }
 
   &__item--latte {
@@ -25,6 +29,10 @@
 
     @media (min-width: $tablet) {
       background: linear-gradient(180deg, $background-latte 77%, transparent 50%);
+    }
+
+    @media (min-width: $desktop) {
+      background-color: $background-latte;
     }
   }
 
@@ -34,6 +42,10 @@
     @media (min-width: $tablet) {
       background: linear-gradient(180deg, $background-espresso 77%, transparent 50%);
     }
+
+    @media (min-width: $desktop) {
+      background-color: $background-espresso;
+    }
   }
 
 
@@ -41,6 +53,11 @@
     @media (min-width: $tablet) {
       display: flex;
       flex-direction: column-reverse;
+    }
+
+    @media (min-width: $desktop) {
+      flex-direction: row;
+      justify-content: space-between;
     }
   }
   // блок с харастеристиками новинки
