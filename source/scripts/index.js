@@ -15,12 +15,3 @@ navToggle.addEventListener('click', () => {
     navMain.classList.remove('main-nav--opened');
   }
 });
-
-// слайдер
-new Swiper('.slider',{ /* настройки слайдера */
-  /* настройки стрелок */
-  navigation: {
-    nextEl: '.swiper-button-next', /* следующий элемент */
-    prevEl: '.swiper-button-prev' /* предыдущий элемент */
-  },
-});
