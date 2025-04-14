@@ -8,14 +8,59 @@
     display: grid;
     grid-template-columns: repeat(2, 1fr); // 2 коллонки
     grid-column: 30px; // растояние между колонками
-    grid-row-gap: 50px; //растояние между зядами
+    grid-row-gap: 43px; //растояние между зядами
   }
 
   &__item {
     @media (min-width: $tablet) {
       display: flex;
-      gap: 21px;
+      gap: 20px;
     }
+  }
+
+  &__item::before {
+    content: "";
+    width: 52px;
+    height: 56px;
+    flex-shrink: 0;
+    display: block;
+    margin: 0 auto 10px;
+
+    @media (min-width: $tablet) {
+      margin: 8px 0 0;
+    }
+  }
+
+  &__item--watch::before {
+    background-image: url("../../icons/stack.svg#watch");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__item--confort::before {
+    background-image: url("../../icons/stack.svg#confort");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+
+    @media (min-width: $tablet) {
+      margin-top: 4px;
+    }
+  }
+
+  &__item--cheerfulness::before {
+    background-image: url("../../icons/stack.svg#cheerfulness");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+    background-position: center;
+  }
+
+  &__item--ecology::before {
+    background-image: url("../../icons/stack.svg#ecology");
+    background-size: 52px 56px;
+    background-repeat: no-repeat;
+    background-position: center;
   }
 
   &__wrapper {
@@ -42,5 +87,11 @@
     line-height: 20px;
     margin: 0;
     margin-top: 4px;
+
+    @media (min-width: $tablet) {
+      font-size: 16px;
+      line-height: 24px;
+      margin-top: 10px;
+    }
   }
 }
