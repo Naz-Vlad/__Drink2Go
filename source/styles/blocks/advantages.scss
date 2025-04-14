@@ -7,6 +7,10 @@
     padding: 56px 30px 100px;
   }
 
+  @media (min-width: $desktop) {
+    padding: 99px 40px 120px;
+  }
+
   &__title {
     text-transform: uppercase;
     color: $base-primary;
@@ -29,6 +33,10 @@
       font-size: 42px;
       line-height: 64px;
       margin-bottom: 55px;
+    }
+
+    @media (min-width: $desktop) {
+      margin-bottom: 70px;
     }
   }
 }

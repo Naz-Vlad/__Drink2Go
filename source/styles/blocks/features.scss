@@ -6,15 +6,28 @@
 
   @media (min-width: $tablet) {
     display: grid;
-    grid-template-columns: repeat(2, 1fr); // 2 коллонки
+    grid-template-columns: repeat(2, 1fr); // 2 коллонки, 2 ряда
     grid-column: 30px; // растояние между колонками
-    grid-row-gap: 43px; //растояние между зядами
+    grid-row-gap: 43px; //растояние между рядами
+  }
+
+  @media (min-width: $desktop) {
+    grid-template-columns: repeat(4, 1fr); // 4 колонки, 1 ряд
   }
 
   &__item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
     @media (min-width: $tablet) {
-      display: flex;
+      flex-direction: row;
       gap: 20px;
+    }
+
+    @media (min-width: $desktop) {
+      flex-direction: column;
+      align-items: center;
     }
   }
 
@@ -24,7 +37,6 @@
     height: 56px;
     flex-shrink: 0;
     display: block;
-    margin: 0 auto 10px;
 
     @media (min-width: $tablet) {
       margin: 8px 0 0;
@@ -43,10 +55,6 @@
     background-size: 52px 56px;
     background-repeat: no-repeat;
     background-position: center;
-
-    @media (min-width: $tablet) {
-      margin-top: 4px;
-    }
   }
 
   &__item--cheerfulness::before {
@@ -66,6 +74,10 @@
   &__wrapper {
     @media (min-width: $tablet) {
       text-align: left;
+    }
+
+    @media (min-width: $desktop) {
+      text-align: center;
     }
   }
 
