@@ -74,6 +74,7 @@
   </header>
 
   <main class="main">
+    <!-- Слайдер -->
     <section class="hero">
       <h2 class="visually-hidden">Слайдер с новинками</h2>
       <!-- слайдер -->
@@ -165,6 +166,7 @@
         <div class="swiper-pagination slider-pagination-bullet "></div>
       </div>
     </section>
+
     <!-- Преимущества -->
     <section class="advantages">
       <h2 class="advantages__title">Преимущества</h2>
@@ -200,6 +202,168 @@
         </li>
       </ul>
     </section>
+
+    <!-- Каталог -->
+    <section class="catalog">
+      <div class="container">
+        <h2 class="catalog__title">Каталог</h2>
+        <p class="catalog__slogan">Каталог кофейных напитков</p>
+        <!-- центровщик каталога -->
+        <div class="catalog__wrapper">
+          <!-- фильтр каталога -->
+          <section class="catalog__filter filter">
+            <h2 class="visually-hidden">Фильтрация</h2>
+            <!-- фильтр цен -->
+            <form class="filter__form" action="https://echo.htmlacademy.ru" method="post">
+
+              <!-- блок цен -->
+              <div class="filter__price">
+                <p class="filter__heading">Цена</p>
+                <!-- диапазон цен -->
+                <div class="filter__range">
+                  <!-- ползунок -->
+                  <div class="filter__range-controls">
+                    <!-- диапозон шкала -->
+                    <div class="filter__range-scale">
+                      <!-- диапазон-панель -->
+                      <div class="filter__range-bar"></div>
+                    </div>
+                    <!-- переключатели диапазонов -->
+                    <div class="filter__range-toggles">
+                      <div class="filter__range-toggle filter__range-toggle--min">
+                      </div>
+                      <div class="filter__range-toggle filter__range-toggle--max">
+                      </div>
+                    </div>
+                  </div>
+                  <!-- формы с ценами -->
+                  <div class="filter__price-controls">
+                    <label class="control-price">
+                      <input class="filter__price-control filter__price-control--min" type="text" name="min-price" value="0">
+                    </label>
+                    <span class="filter__price-control-divider"></span>
+                    <label>
+                      <input class="filter__price-control filter__price-control--max" type="text" name="max-price" value="900">
+                    </label>
+                  </div>
+                </div>
+              </div>
+
+              <!-- блок выбора -->
+              <div class="filter__fieldsets">
+                <!-- блок выбора по наличию молока -->
+                <fieldset class="filter__fieldset filter__fieldset--available">
+                  <legend class="filter__heading">Наличие молока</legend>
+                  <!-- список опций -->
+                  <ul class="available-list">
+                    <li class="available-list__item">
+                      <label class="available-list__label">
+                        <input class="available-list__input visually-hidden" type="radio" name="radio" value="Неважно" checked>
+                        <span class="available-list__radio"></span>
+                        <span class="available-list__text">Неважно</span>
+                      </label>
+                    </li>
+                    <li class="available-list__item">
+                      <label class="available-list__label">
+                        <input class="available-list__input visually-hidden" type="radio" name="radio" value="Только животное" checked>
+                        <span class="available-list__radio"></span>
+                        <span class="available-list__text">Только животное</span>
+                      </label>
+                    </li>
+                    <li class="available-list__item">
+                      <label class="available-list__label">
+                        <input class="available-list__input visually-hidden" type="radio" name="radio" value="Только растительное" checked>
+                        <span class="available-list__radio"></span>
+                        <span class="available-list__text">Только растительное</span>
+                      </label>
+                    </li>
+                    <li class="available-list__item">
+                      <label class="available-list__label">
+                        <input class="available-list__input visually-hidden" type="radio" name="radio" value="Без молока" disabled>
+                        <span class="available-list__radio"></span>
+                        <span class="available-list__text">Без молока</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+                <!-- блок выбора по производителю -->
+                <fieldset class="filter__fieldset filter__fieldset--country">
+                  <legend class="filter__heading">Страна произрастания</legend>
+                  <!-- список производителей -->
+                  <ul class="country-list">
+                    <li class="country-list__item">
+                      <label class="country-list__label">
+                        <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Бразилия" checked>
+                        <span class="country-list__checkbox"></span>
+                        <span class="country-list__text">Бразилия</span>
+                      </label>
+                    </li>
+                    <li class="country-list__item">
+                      <label class="country-list__label">
+                        <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Эфиопия" checked>
+                        <span class="country-list__checkbox"></span>
+                        <span class="country-list__text">Эфиопия</span>
+                      </label>
+                    </li>
+                    <li class="country-list__item">
+                      <label class="country-list__label">
+                        <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Колумбия" checked>
+                        <span class="country-list__checkbox"></span>
+                        <span class="country-list__text">Колумбия</span>
+                      </label>
+                    </li>
+                    <li class="country-list__item">
+                      <label class="country-list__label">
+                        <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Коста-Рика" checked>
+                        <span class="country-list__checkbox"></span>
+                        <span class="country-list__text">Коста-Рика</span>
+                      </label>
+                    </li>
+                    <li class="country-list__item">
+                      <label class="country-list__label">
+                        <input class="country-list__input visually-hidden" type="checkbox" name="checkbox" value="Перу" disabled>
+                        <span class="country-list__checkbox"></span>
+                        <span class="country-list__text">Перу</span>
+                      </label>
+                    </li>
+                  </ul>
+                </fieldset>
+              </div>
+              <!-- блок кнопок -->
+              <div class="filter__buttons">
+                <div class="filter__buttons-wrapper">
+                  <button class="filter__button filter__button--apply" type="submit">Применить</button>
+                  <button class="filter__button filter__button--reset" type="reset">Сбросить</button>
+                </div>
+              </div>
+            </form>
+          </section>
+          <!-- лист каталога -->
+          <section class="catalog__list">
+            <!-- блок сортировки -->
+            <div class="sorting">
+              <h2 class="visually-hidden">Сортировка</h2>
+              <div class="sorting__wrapper">
+                <span class="sorting__text">Сортировка:</span>
+                <div class="sorting__select">
+                  <select class="sorting__values" name="sorting-values" id="sorting-values">
+                    <option class="sorting__control" value="default">по умолчанию</option>
+                    <option class="sorting__control" value="expensive">сначала дорогие</option>
+                    <option class="sorting__control" value="cheap">сначала дешёвые</option>
+                    <option class="sorting__control" value="high-rating">высокий рейтинг</option>
+                  </select>
+                </div>
+              </div>
+            </div>
+            <!-- блок продуктов -->
+            <ul class="product-list"></ul>
+            <!-- блок погинации -->
+            <ul class="pagination-list"></ul>
+          </section>
+        </div>
+      </div>
+    </section>
+
   </main>
   <footer class="footer">
     <p>ПОДВАЛ</p>
