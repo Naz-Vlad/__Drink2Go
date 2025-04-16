@@ -79,13 +79,10 @@
   }
 
   &__badge {
-    display: block;
-    font-weight: 700;
-    text-transform: uppercase;
-    color: $base-primary;
+    @include h2;
     margin-top: 6px;
     margin-bottom: 4px;
-    letter-spacing: 0.06em; // растягивает текст
+    display: block;
 
     @media (min-width: $tablet) {
       margin-top: 39px;

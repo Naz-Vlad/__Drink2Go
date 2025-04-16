@@ -1,0 +1,31 @@
+.filter {
+  margin: 20px auto 0;
+
+  &__heading {
+    text-align: left;
+    font-size: 16px;
+    line-height: 24px;
+    font-family: $montserrat-semi-bold;
+    margin: 0 0 20px;
+  }
+
+  &__range-controls {
+    position: relative;
+    padding: 11px 0;
+    margin-bottom: 24px;
+  }
+
+  &__range-scale {
+    height: 2px;
+    min-width: 280px;
+    background-color: $light-grey;
+  }
+
+  &__range-bar {
+    position: absolute;
+    height: 4px;
+    background-color: $primary-lighter;
+    width: 241px;
+    top: 10;
+  }
+}

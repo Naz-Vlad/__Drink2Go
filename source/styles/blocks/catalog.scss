@@ -1,0 +1,14 @@
+.catalog {
+  padding: 50px 20px 44px;
+  background-color: $background-grey;
+  text-align: center;
+
+  &__title {
+    @include h2;
+    margin-bottom: 4px;
+  }
+
+  &__slogan {
+    @include slogan;
+  }
+}

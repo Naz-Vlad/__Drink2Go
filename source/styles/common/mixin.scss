@@ -1,3 +1,22 @@
+// заголовщк
+@mixin h2 {
+  text-transform: uppercase;
+  color: $base-primary;
+  margin: 0;
+  font-family: $montserrat-bold;
+  font-size: 12px;
+  line-height: 16px;
+  letter-spacing: 0.05em;// растягивает текст
+}
+
+@mixin slogan {
+  margin: 0;
+  font-size: 24px;
+  line-height: 36px;
+  font-family: $montserrat-bold;
+}
+
+// кнопка
 @mixin button {
   font-size: 16px;
   line-height: 24px;

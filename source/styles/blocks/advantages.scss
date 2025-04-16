@@ -12,22 +12,13 @@
   }
 
   &__title {
-    text-transform: uppercase;
-    color: $base-primary;
-    font-family: $montserrat-bold;
-    font-size: 12px;
-    line-height: 16px;
-    margin: 0;
-    margin-bottom: 5px;
-    letter-spacing: 0.04em;
+    @include h2;
+    margin-bottom: 4px;
   }
 
   &__slogan {
-    margin: 0;
+    @include slogan;
     margin-bottom: 35px;
-    font-size: 24px;
-    line-height: 36px;
-    font-family: $montserrat-bold;
 
     @media (min-width: $tablet) {
       font-size: 42px;
