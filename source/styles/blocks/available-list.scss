@@ -1,0 +1,40 @@
+//список опцмй
+.available-list {
+  @include options;
+
+  &__item {
+    position: relative;
+    padding-left: 35px;
+  }
+
+  &__radio {
+    position: absolute;
+    width: 24px;
+    height: 24px;
+    border-radius: 50px;
+    background-color: $base-white;
+    border: 2px solid $base-grey;
+    top: 0;
+    left: 1;
+    cursor: pointer;
+  }
+
+  &__input[type="radio"]:checked + &__radio {
+    border: 2px solid $base-primary;
+  }
+
+  &__input[type="radio"]:checked + &__radio::before {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: $base-primary;
+    top: 3px;
+    left: 2px;
+  }
+
+  &__radio:hover {
+    border: 2px solid $base-primary;
+  }
+}
