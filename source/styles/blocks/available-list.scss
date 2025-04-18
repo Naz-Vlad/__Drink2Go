@@ -30,11 +30,30 @@
     height: 16px;
     border-radius: 50%;
     background-color: $base-primary;
-    top: 3px;
-    left: 2px;
+    top: 2;
+    left: 2;
   }
 
   &__radio:hover {
     border: 2px solid $base-primary;
+  }
+
+  &__input:not(:disabled):hover + &__radio::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(120, 89, 207, 0.25);
+    top: 2;
+    left: 2;
+  }
+
+  &__input:disabled ~ &__text {
+    color: $base-grey;
+  }
+
+  &__input:disabled ~ &__radio {
+    border: 2px solid rgba(120, 89, 207, 0.25);
   }
 }
