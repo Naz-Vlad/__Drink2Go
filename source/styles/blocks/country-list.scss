@@ -1,0 +1,52 @@
+.country-list {
+  @include options;
+
+  &__item {
+    position: relative;
+    padding-left: 53px;
+  }
+
+  &__checkbox {
+    position: absolute;
+    width: 42px;
+    height: 24px;
+    background-color: $base-grey;
+    border-radius: 12px;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+  }
+
+  &__input:not(:disabled):hover + &__checkbox {
+    outline: 2px solid $base-primary;
+    background-color: rgba(120, 89, 207, 0.25);
+  }
+
+  &__input[type="checkbox"]:checked + &__checkbox {
+    background-color: $base-primary;
+  }
+
+  &__checkbox::after {
+    content: "";
+    position: absolute;
+    width: 20px;
+    height: 20px;
+    border-radius: 50%;
+    background-color: $base-white;
+    top: 1.5;
+    left: 2;
+  }
+
+  &__input[type="checkbox"]:checked + &__checkbox::after {
+    left: auto;
+    right: 2;
+  }
+
+  &__input:disabled ~ &__text {
+    color: $base-grey;
+  }
+
+  &__input:disabled ~ &__checkbox {
+    background-color: #e2e2e2;
+  }
+}

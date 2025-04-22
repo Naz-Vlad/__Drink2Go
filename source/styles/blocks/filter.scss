@@ -23,34 +23,42 @@
   }
 
   &__range-bar {
-    position: absolute;
     height: 4px;
     background-color: $primary-lighter;
     width: 241px;
     top: 10;
   }
 
-  &__range-toggles {
+  &__range-toggle {
     position: absolute;
     width: 24px;
     height: 24px;
     border-radius: 50%;
     background-color: $base-white;
     outline: 2px solid $primary-lighter;
-    top: -10;
+    top: 0;
     left: 0;
     cursor: pointer;
   }
 
   &__range-toggle--max {
-    position: absolute;
-    width: 24px;
-    height: 24px;
-    border-radius: 50%;
-    background-color: $base-white;
-    border: 2px solid $primary-lighter;
     left: 237;
     top: 0;
+  }
+
+  &__range-toggle:hover::after {
+    content: "";
+    position: absolute;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    background-color: rgba(120, 89, 207, 0.25);
+    top: 4;
+    left: 4;
+  }
+
+  &__range-toggle:active::after {
+    background-color: $base-primary;
   }
 
   &__price-controls {
@@ -72,8 +80,16 @@
     border: none;
     cursor: pointer;
 
+    &--max:hover {
+      outline-color: $primary-darker;
+    }
+
     &--min {
       color: $base-grey;
+
+      &:disabled {
+        outline-color: $light-grey;
+      }
     }
   }
 
