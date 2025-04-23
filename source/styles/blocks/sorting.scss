@@ -1,0 +1,36 @@
+.sorting {
+  padding-bottom: 20px;
+
+  &__wrapper {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__text {
+    display: block;
+    font-family: $montserrat-semi-bold;
+    font-size: 16px;
+    line-height: 24px;
+    padding-left: 3px;
+    margin-right: 8px;
+  }
+
+  &__values {
+    position: relative;
+    width: 165px;
+    display: block;
+    font-family: $montserrat-semi-bold;
+    font-size: 16px;
+    line-height: 24px;
+    color: $base-primary;
+    padding-left: 11px;
+    border: none;
+    background-color: transparent;
+    cursor: pointer;
+    appearance: none;
+    background-image: url("../../icons/stack.svg#select-arrow");
+    background-repeat: no-repeat;
+    background-size: 10px 10px;
+    background-position: 146px 6px;
+  }
+}

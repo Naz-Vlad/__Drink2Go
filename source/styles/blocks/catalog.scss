@@ -5,10 +5,11 @@
 
   &__title {
     @include h2;
-    margin-bottom: 4px;
+    margin-bottom: 5px;
   }
 
   &__slogan {
     @include slogan;
+    padding: 0;
   }
 }
