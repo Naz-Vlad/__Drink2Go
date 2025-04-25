@@ -1,5 +1,6 @@
 .country-list {
   @include options;
+  margin-bottom: 29px;
 
   &__item {
     position: relative;

@@ -1,0 +1,53 @@
+.card {
+  background-color: $base-white;
+  padding: 40px 20px 20px;
+
+  &__title {
+    margin: 20px 0 0;
+    text-align: left;
+    font-family: $montserrat-bold;
+    font-size: 18px;
+    line-height: 32px;
+    color: $base-black;
+  }
+
+  &__description {
+    margin-top: 4px;
+    margin-bottom: 15px;
+    text-align: left;
+    font-size: 14px;
+    line-height: 20px;
+  }
+
+  &__buy {
+    display: flex;
+    justify-content: space-between;
+  }
+
+  &__price {
+    font-family: $montserrat-semi-bold;
+    font-size: 20px;
+    line-height: 32px;
+    padding-top: 2px;
+  }
+
+  &__button {
+    @include button;
+    min-width: 141px;
+    font-size: 14px;
+    line-height: 20px;
+
+    &:not(.card__button--disabled):hover,
+    &:not(.card__button--disabled):focus {
+      background-color: $primary-lighter;
+    }
+
+    &:not(.card__button--disabled):active {
+      background-color: $primary-darker;
+    }
+
+    &--disabled {
+      background-color: $base-grey;
+    }
+  }
+}
